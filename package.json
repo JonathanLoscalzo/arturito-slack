@@ -1,0 +1,35 @@
+{
+  "name": "arturito",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www",
+    "debug": "DEBUG=arturito:* node --inspect ./bin/www",
+    "debug:nodemon": "nodemon --inspect ./bin/www",
+    "prod": "concurrently \"node worker.js\"  \"node ./bin/www\""
+  },
+  "dependencies": {
+    "@keyv/redis": "^2.1.2",
+    "@octokit/rest": "^18.0.5",
+    "@slack/events-api": "^2.3.4",
+    "@slack/web-api": "^5.11.0",
+    "await-to": "^0.1.0",
+    "axios": "^0.20.0",
+    "bull": "^3.18.0",
+    "concurrently": "^5.3.0",
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "dotenv": "^8.2.0",
+    "dotenv-flow": "^3.2.0",
+    "express": "~4.16.1",
+    "form-data": "^3.0.0",
+    "keyv": "^4.0.1",
+    "lodash": "^4.17.20",
+    "morgan": "~1.9.1",
+    "slackdown": "^0.1.1",
+    "throng": "^4.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}
